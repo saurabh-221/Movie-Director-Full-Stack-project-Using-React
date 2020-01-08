@@ -1,38 +1,213 @@
+@font-face {
+  font-family: 'FloodStd';
+  src: url('./Flood.ttf');
+  font-style: normal;
+  font-weight: normal;
+}
+
 .App {
   text-align: center;
+  height: 40%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #001f3f;
+  
+  /* min-height: 10vh; */
+  height: 120px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.App-header h3{
+  margin-top: -10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.movie h3{ 
+  margin-top: 75px;
+  margin-left: -800px;
+  margin-bottom: 35px;
+  font-weight: 400;
+  font-family: FloodStd;
 }
+.director h3{
+  margin-top: 75px;
+  margin-right: -550px;
+  font-weight: 400;
+  font-family: FloodStd;
+  /* margin-top: -79px; */
+  /* color: #FF851B; */
+}
+/* .main-content {
+  display: flex;
+  flex-basis: 100px;
+} */
+
+.search-add{
+  height: 55px;
+  /* display: flex; */
+  background-color: white;
+}
+.search-add input{
+  /* float: centre; */
+  height: 30px;
+  width: 300px;
+  margin-left: 100px;
+  margin-top: 10px;
+  background-color: #3a3a3c;
+  color: white;
+  text-align: center;
+}
+.search-add button{
+  height: 30px;
+  width: 80px;
+  float: right;
+  margin-right: 100px;
+  margin-top: 13px;
+
+}
+
+body{
+    background: #eee;
+}
+span{
+    font-size:15px;
+}
+a{
+  text-decoration:none; 
+  color: orangered;
+  border-bottom:2px solid #0062cc;
+}
+.box{
+    padding:0px 0px;
+}
+
+.box-part{
+  text-align: center;
+    /* background:#FFF; */
+    background-image: url("10.jpg");
+  background-size: cover;
+  background-repeat:   no-repeat;
+  background-position: center center;
+    border-radius:0;
+    padding:60px 10px;
+    
+    /* margin:30px 0px; */
+    margin: auto;
+    /* margin-top: 10px; */
+    margin-bottom: 15px;
+    /* min-width: 250px; */
+    width: 800px;
+	/* max-width: 250px; */
+	/* background-color: #eee; */
+	/* margin: 1em; */
+	/* padding: 5px 0; */
+	border-radius: 4px;
+	color: #666;
+	/* box-shadow: 1px 1px 6px 3px #e0e0e0; */
+	/* border: 3px solid #eee; */
+  border-top: 3px solid black;
+  border-right: 3px solid black;
+  border-bottom: 3px solid black;
+  border-left: 3px solid black;
+}
+.box-part h4{
+  font-weight: 300;
+  color: black;
+}
+.box-part h2{
+  font-weight: 400;
+  color: orangered;
+}
+.text{
+    margin:20px 0px;
+}
+
+.fa{
+     color:#4183D7;
+}
+.container{
+  background-image: url("16.jpg");
+  background-size: cover;
+  background-repeat:   no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.backLayer {
+  position: fixed;
+z-index: 10;
+left: 0%;
+  top: 0%;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color:rgba(0, 0, 0, 0.64)
+}
+.layer {
+  /* align-items: center; */
+  position: fixed;
+  z-index: 20;
+  left: 20%;
+  top: 20%;
+  height: 60%;
+  width: 65%;
+  overflow: auto;
+  background-color: #999;
+}
+.element {
+  position: relative;
+  left:0;
+}
+.element label{
+  position: absolute;
+  margin-left:10%;
+  left: 0;
+  transition: 0.5s;
+  font-size:18px;
+  pointer-events: none;
+}
+
+.element input{
+  font-size:18px;
+  box-sizing:none;
+  margin-left:25%;
+ margin-bottom:35px;
+  height:30px;
+  width: 40%;
+  border:none;
+  background: transparent;
+  background-color: transparent;
+  border: 1px solid rgb(54, 29, 29);
+}
+/* .add-change{
+  margin-top: 10px;
+} */
+.movie h3 a{
+  text-decoration: none
+}
+.popup-header{
+  text-align: center;
+}
+.popup-content{
+  background-color: #eee;
+  text-align: left;
+  padding: 20px;
+  font-weight: lighter;
+}
+.popup-content h4{
+  /* text-align: left; */
+  /* padding: 20px; */
+  font-weight: lighter;
+}
+.buttons{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: 550px;
+  /* margin: 100px; */
+}
+/* .movie h3{
+  color: orangered;
+} */
